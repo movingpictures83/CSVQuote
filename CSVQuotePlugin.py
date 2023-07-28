@@ -6,7 +6,7 @@ def is_number(s):
         return False
 
 def is_quoted(s):
-    return (s[0] == '\"' and s[len(s)-1] == '\"')
+    return (len(s) != 0 and s[0] == '\"' and s[len(s)-1] == '\"')
 
 class CSVQuotePlugin:
     def input(self, filename):
